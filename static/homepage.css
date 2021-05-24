@@ -1,0 +1,46 @@
+.navbar-brand {
+  margin-left: 100px;
+  color: #17a2b8 !important;
+  font-size: 30px;
+}
+
+.nav {
+  margin-right: 100px;
+}
+.nav-item {
+  margin-right: 20px;
+}
+
+.section2 {
+  height: 600px;
+  width: 100%;
+  background-image: url("https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5dbb4182d85e3000078fddae%2F0x0.jpg");
+}
+
+.container {
+  margin-top: 70px;
+}
+.col-sec {
+  padding-left: 200px;
+}
+.row-2 {
+  margin-top: 60px;
+  border-top: 3px solid rgb(177, 176, 176);
+  border-top-style: dashed;
+  padding-top: 40px;
+}
+footer {
+  height: 100px;
+  position: relative;
+  background-color: #212529;
+  width: 100%;
+  margin-top: 80px;
+}
+footer p {
+  position: absolute;
+  color: #17a2b8;
+  font-weight: 500;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

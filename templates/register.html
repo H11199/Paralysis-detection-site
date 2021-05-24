@@ -1,0 +1,86 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Self Clinic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+      <link rel="stylesheet" href="../static/styles.css" />
+  </head>
+  <body>
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      {% for msg in messages %}
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="..." class="rounded me-2" alt="...">
+            <strong class="me-auto">OOps</strong>
+
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            {{msg}}
+          </div>
+        </div>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+  <p class="tip">You want to do free check up?</p>
+<div class="cont">
+  <form method="post" action="{{url_for('login')}}" class="form sign-in">
+    <h2>Welcome back,</h2>
+    <label>
+      <span>Username</span>
+      <input type="text" name="username"/>
+    </label>
+    <label>
+      <span>Password</span>
+      <input type="password" name="pass"/>
+    </label>
+    <button type="submit" class="submit">Log In</button>
+    <button type="button" class="fb-btn">Connect with <span>facebook</span></button>
+  </form>
+  <div class="sub-cont">
+
+    <div class="img">
+      <div class="img__text m--up">
+        <h2>New here?</h2>
+        <p>Sign up and discover great amount of new opportunities!</p>
+      </div>
+      <div class="img__text m--in">
+        <h2>One of us?</h2>
+        <p>If you already has an account, just sign in. We've missed you!</p>
+      </div>
+      <div class="img__btn">
+        <span class="m--up">Sign Up</span>
+        <span class="m--in">Sign In</span>
+      </div>
+    </div>
+    <form method="post" action="{{url_for('register')}}" class="form sign-up">
+      <h2>Time to feel like home,</h2>
+      <label>
+        <span>Username</span>
+        <input type="text" name="username"/>
+      </label>
+      <label>
+        <span>Password</span>
+        <input type="password" name="pass"/>
+      </label>
+      <button type="submit" class="submit">Sign Up</button>
+    </form>
+
+  </div>
+</div>
+
+<a href="https://dribbble.com/shots/3306190-Login-Registration-form" target="_blank" class="icon-link">
+  <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/256/Dribbble-icon.png">
+</a>
+<a href="https://twitter.com/NikolayTalanov" target="_blank" class="icon-link icon-link--twitter">
+  <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png">
+</a>
+  <script type="text/javascript" src="../static/index.js"></script>
+  </body>
+</html>

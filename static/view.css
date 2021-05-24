@@ -1,0 +1,32 @@
+.container-sec {
+  height: 500px;
+  width: 1000px;
+}
+.container {
+  height: 100vh;
+  position: relative;
+}
+.container-sec {
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container-ter {
+  height: 100%;
+  position: relative;
+  border: 5px solid rgb(110, 110, 110);
+  border-style: dashed;
+}
+.card {
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.font-st {
+  font-size: 120px;
+}
